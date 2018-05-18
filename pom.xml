@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.jgrapht.archetypes</groupId>
+	<artifactId>maven-archetype-jgrapht</artifactId>
+	<version>1.1.0-SNAPSHOT</version>
+	<name>Maven JGraphT Archetype</name>
+	<url>http://www.jgrapht.org</url>
+
+	<description>
+    An archetype which contains a sample JGraphT project
+  	</description>
+
+	<packaging>maven-archetype</packaging>
+
+	<licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+    </licenses>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<scm>
+		<connection>scm:git:git@github.com:d-michail/maven-archetype-jgrapht.git</connection>
+		<url>https://github.com/d-michail/maven-archetype-jgrapht.git</url>
+		<developerConnection>scm:git:git@github.com:d-michail/maven-archetype-jgrapht.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<issueManagement>
+        <url>https://github.com/d-michail/maven-archetype-jgrapht/issues</url>
+    </issueManagement>
+
+	<developers>
+		<developer>
+			<name>Dimitrios Michail</name>
+			<email>dimitrios.michail@gmail.com</email>
+			<organization>Dimitrios Michail</organization>
+			<organizationUrl>https://github.com/d-michail</organizationUrl>
+		</developer>
+	</developers>
+
+	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.archetype</groupId>
+				<artifactId>archetype-packaging</artifactId>
+				<version>3.0.1</version>
+			</extension>
+		</extensions>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-archetype-plugin</artifactId>
+				<version>3.0.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
