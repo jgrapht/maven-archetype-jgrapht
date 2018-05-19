@@ -3,8 +3,9 @@ package $package;
 import static org.junit.Assert.assertEquals;
 
 import org.jgrapht.Graph;
-import org.jgrapht.graph.DefaultDirectedGraph;
 import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.builder.GraphTypeBuilder;
+import org.jgrapht.util.SupplierUtil;
 import org.junit.Test;
 
 /**
@@ -13,26 +14,32 @@ import org.junit.Test;
 public class AppTest 
 {
     /**
-     * Rigourous Test :-)
+     * Rigorous Test :-)
      */
     @Test
-    public void basic()
+    public void rigorousTest()
     {
-        Graph<String, DefaultEdge> graph = new DefaultDirectedGraph<>(DefaultEdge.class);
+        Graph<String, DefaultEdge> graph = GraphTypeBuilder
+				.directed()
+				.allowingMultipleEdges(true)
+				.allowingSelfLoops(true)
+				.vertexSupplier(SupplierUtil.createStringSupplier())
+				.edgeSupplier(SupplierUtil.createDefaultEdgeSupplier())
+				.buildGraph();
         
-        graph.addVertex("v1");
-        graph.addVertex("v2");
-        graph.addVertex("v3");
+        String v0 = graph.addVertex();
+        String v1 = graph.addVertex();
+        String v2 = graph.addVertex();
         
-        graph.addEdge("v1", "v2");
-        graph.addEdge("v1", "v3");
-        graph.addEdge("v2", "v3");
+        graph.addEdge(v0, v1);
+        graph.addEdge(v0, v2);
+        graph.addEdge(v1, v2);
         
         assertEquals(3, graph.vertexSet().size());
         assertEquals(3, graph.edgeSet().size());
         
-        assertEquals(2, graph.outDegreeOf("v1"));
-        assertEquals(1, graph.outDegreeOf("v2"));
-        assertEquals(0, graph.outDegreeOf("v3"));
+        assertEquals(2, graph.outDegreeOf(v0));
+        assertEquals(1, graph.outDegreeOf(v1));
+        assertEquals(0, graph.outDegreeOf(v2));
     }
 }
