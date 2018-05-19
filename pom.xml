@@ -26,14 +26,14 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git:git@github.com:d-michail/maven-archetype-jgrapht.git</connection>
-		<url>https://github.com/d-michail/maven-archetype-jgrapht.git</url>
-		<developerConnection>scm:git:git@github.com:d-michail/maven-archetype-jgrapht.git</developerConnection>
+		<connection>scm:git:git@github.com:jgrapht/maven-archetype-jgrapht.git</connection>
+		<url>https://github.com/jgrapht/maven-archetype-jgrapht.git</url>
+		<developerConnection>scm:git:git@github.com:jgrapht/maven-archetype-jgrapht.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
-        <url>https://github.com/d-michail/maven-archetype-jgrapht/issues</url>
+        <url>https://github.com/jgrapht/maven-archetype-jgrapht/issues</url>
     </issueManagement>
 
 	<developers>
