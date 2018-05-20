@@ -5,7 +5,7 @@ This is a Maven archetype project for the [JGraphT](https://github.com/jgrapht/j
 
 ## Install locally
 
-Assuming this project is at version 1.2.0-SNAPSHOT you can install locally by closing this repository and issuing a `mvn install`. After installing you can generate a new JGraphT project in batch mode by issuing 
+Assuming this project is at version 1.2.0-SNAPSHOT you can install locally by cloning this repository and issuing a `mvn install`. After installing you can generate a new JGraphT project in batch mode by issuing 
 
 ```bash
 mvn archetype:generate -DarchetypeGroupId=org.jgrapht.archetypes -DarchetypeArtifactId=maven-archetype-jgrapht -DarchetypeVersion=1.2.0-SNAPSHOT -DgroupId=org.myorg -DartifactId=myapp -Dversion=0.1.0-SNAPSHOT -B
