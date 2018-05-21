@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jgrapht.archetypes</groupId>
 	<artifactId>maven-archetype-jgrapht</artifactId>
-	<version>1.2.0</version>
+	<version>1.2.1-SNAPSHOT</version>
 	<name>Maven JGraphT Archetype</name>
 	<url>http://www.jgrapht.org</url>
 
@@ -27,7 +27,7 @@
 		<connection>scm:git:git@github.com:jgrapht/maven-archetype-jgrapht.git</connection>
 		<url>https://github.com/jgrapht/maven-archetype-jgrapht.git</url>
 		<developerConnection>scm:git:git@github.com:jgrapht/maven-archetype-jgrapht.git</developerConnection>
-		<tag>maven-archetype-jgrapht-1.2.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
