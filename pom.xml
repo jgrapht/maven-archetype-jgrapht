@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jgrapht.archetypes</groupId>
 	<artifactId>maven-archetype-jgrapht</artifactId>
-	<version>1.2.0-SNAPSHOT</version>
+	<version>1.2.0</version>
 	<name>Maven JGraphT Archetype</name>
 	<url>http://www.jgrapht.org</url>
 
@@ -28,7 +27,7 @@
 		<connection>scm:git:git@github.com:jgrapht/maven-archetype-jgrapht.git</connection>
 		<url>https://github.com/jgrapht/maven-archetype-jgrapht.git</url>
 		<developerConnection>scm:git:git@github.com:jgrapht/maven-archetype-jgrapht.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>maven-archetype-jgrapht-1.2.0</tag>
 	</scm>
 
 	<issueManagement>
