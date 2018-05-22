@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-catalog>
+  <archetypes>
+    <archetype>
+      <groupId>org.jgrapht.archetypes</groupId>
+      <artifactId>maven-archetype-jgrapht</artifactId>
+      <version>1.2.0</version>
+    </archetype>
+  </archetypes>
+</archetype-catalog>
